@@ -21,10 +21,16 @@ body {
 	align-items: center;
 }
 
-.header-img {
+.header-logo {
+	width: 250px;
+}
+
+.header-logo_img {
 	width: 200px;
 	border-radius: 50%;
+
 }
+
 
 
 
@@ -47,7 +53,7 @@ body {
 
 
 @media (max-width: 992px) {
-	.header-img {
+	.header-logo_img {
 		width: 150px;
 	}
 }
@@ -57,21 +63,26 @@ body {
 	.header {
 		position: relative;
 	}
-	.header-img {
+
+	.header-logo {
+  	width: 150px;
+	}
+
+	.header-logo_img {
 		width: 100px;
 	}
 
 	.menu-list {
 		position: absolute;
 		top:120px;
-		right: -100%;
+		right: 100%;
 		width: 100%;
 		background-color: gray;
-
+		display: flex;
 		flex-direction: column;
 		padding: 20px;
 		text-align: center;
-		transition: right 0.4s ease 0s;
+		transition: right 0.4s ease 0.2s;
 
 		margin-right: 0;
 	}
